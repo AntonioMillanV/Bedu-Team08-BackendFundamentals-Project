@@ -1,5 +1,4 @@
 /* Clase que representa un automovil en nuestra API */
-
 class Car {
     constructor(id, price, make, model, year, miles, drivetrain, chasisType, photos, description, advertiserID) {
         this.id = id;

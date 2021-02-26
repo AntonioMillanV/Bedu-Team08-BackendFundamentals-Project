@@ -5,8 +5,10 @@ router.get('/', (req, res) => {
 });
 
 
-router.use('/pu', require('./purcharser'));
-router.use('/ad', require('./advertiser'));
+router.use('/user', require('./user'));
+
+router.use('/c', require('./car'));
+
 
 //EXPORTAMOS NUESTRO ROUTER;
 module.exports = router;
