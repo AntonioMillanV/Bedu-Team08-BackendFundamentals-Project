@@ -1,8 +1,8 @@
 /* Clase que representa una petición de compra de un auto */
 
 class PurchaseRequest {
-    constructor(purchaseRequestID, creationDate, status, purchaserID, carID) {
-        this.purchaseRequestID = purchaseRequestID;
+    constructor(id, creationDate, status, purchaserID, carID) {
+        this.id = id;
         this.creationDate = creationDate;
         this.status = status;
         this.purchaserID = purchaserID;

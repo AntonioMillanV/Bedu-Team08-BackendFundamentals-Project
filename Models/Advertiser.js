@@ -1,9 +1,8 @@
 /* Clase que representa un anuciante de algun automovil en nuestra API */
-
 class Advertiser {
-    constructor(advertiserID, username, firstName, lastName, phone, email, password, location, bio, profilePhoto, announcementsList) {
-        this.advertiserID = advertiserID;
-        this.username = username;
+
+    constructor(id, firstName, lastName, phone, email, password, location, bio, profilePhoto) {
+        this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.phone = phone;
@@ -12,8 +11,9 @@ class Advertiser {
         this.location = location;
         this.bio = bio;
         this.profilePhoto = profilePhoto;
-        this.announcementsList= announcementsList;
+        this.historial = []
     }
 }
+
 
 module.exports = Advertiser;

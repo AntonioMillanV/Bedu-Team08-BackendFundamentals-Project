@@ -1,8 +1,8 @@
 /* Clase que representa un automovil en nuestra API */
 
 class Car {
-    constructor(carID, price, make, model, year, miles, drivetrain, chasisType, photos, description, advertiserID) {
-        this.carID = carID;
+    constructor(id, price, make, model, year, miles, drivetrain, chasisType, photos, description, advertiserID) {
+        this.id = id;
         this.price = price;
         this.make = make;
         this.model = model;
@@ -12,7 +12,7 @@ class Car {
         this.chasisType = chasisType;
         this.photos = photos;
         this.description = description;
-        this. advertiserID = advertiserID;
+        this.advertiserID = advertiserID;
     }
 }
 
