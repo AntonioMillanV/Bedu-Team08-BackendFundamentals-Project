@@ -1,10 +1,9 @@
-/* Clase que representa a un usuario de la API */
-
+/* Clase que representa un anuciante de algun automovil en nuestra API */
 class User {
-    constructor(id, userType, username, firstName, lastName, phone, email, password, location, bio, profilePhoto, announcesList, purchaseRequestsList) {
+
+    constructor(id, userName, firstName, lastName, phone, email, password, location, bio, profilePhoto) {
         this.id = id;
-        this.userType = userType;
-        this.username = username;
+        this.userName = userName;
         this.firstName = firstName;
         this.lastName = lastName;
         this.phone = phone;
@@ -13,8 +12,8 @@ class User {
         this.location = location;
         this.bio = bio;
         this.profilePhoto = profilePhoto;
-        this.announcesList = announcesList;
-        this.purchaseRequestsList = purchaseRequestsList
+        this.announcesList = [];
+        this.purchaseRequestsList = [];
     }
 }
 
