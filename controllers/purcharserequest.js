@@ -1,11 +1,11 @@
 //CONTROLADOR PARA COMPRADOR
 
 //IMPORTACION DEL MODELO PURCHARSER
-const PurchaseRequest = require('../models/PurchaseRequest');
+const PurchaseRequest = require('../models/Pucharserequest');
 
 const createPR = (req, res) => {
     //INTANCIAMOS UN NUEVO USUARIO UTILIZANDO LA CLASE PURCHARSER
-    let PR = new Car(req.body);
+    let PR = new PurchaseRequest(req.body);
     req.status(201).send(PR);
     console.log(PR);
     console.log(req);
